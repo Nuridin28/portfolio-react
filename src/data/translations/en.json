@@ -1,0 +1,27 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Welcome to My Portfolio",
+    "subtitle": "I'm a passionate developer"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a software developer with experience in building web applications."
+  },
+  "projects": {
+    "title": "My Projects",
+    "view": "View Project"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
+  }
+} 
