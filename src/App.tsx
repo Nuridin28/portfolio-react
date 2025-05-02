@@ -40,7 +40,6 @@ function App() {
               <Route path="*" element={<Navigate to="/home" replace />} />
             </Routes>
           </main>
-          
           <Footer />
         </div>
       </Router>
