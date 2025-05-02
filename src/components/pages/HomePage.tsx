@@ -32,7 +32,7 @@ export default function HomePage() {
         
         <div 
           ref={heroSectionRef}
-          className="container flex flex-col items-center justify-center min-h-[90vh] py-24 text-center"
+          className="container flex flex-col items-center justify-center min-h-[90vh] py-24 text-center md:px-8 px-4"
         >
           <p className="inline-block text-sm font-medium bg-primary/10 text-primary px-4 py-1.5 rounded-full mb-4 animate-fade-in">
             Full Stack Developer
@@ -66,7 +66,7 @@ export default function HomePage() {
           </div>
         </div>
         
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block md:px-8 px-4">
           <div className="w-6 h-10 rounded-full border-2 border-primary flex justify-center pt-2">
             <div className="w-1 h-2 rounded-full bg-primary animate-scroll-down"></div>
           </div>
@@ -85,7 +85,7 @@ export default function HomePage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
             <div className="bg-card rounded-lg p-8 shadow-sm transition-all hover:shadow-md flex flex-col">
               <div className="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mb-6">
                 <Code className="text-primary h-6 w-6" />
@@ -125,7 +125,7 @@ export default function HomePage() {
         </div>
       </section>
       
-      <section className="py-24 bg-gradient-to-r from-primary/5 to-primary/10">
+      <section className="py-24 bg-gradient-to-r from-primary/5 to-primary/10 md:px-8 px-4">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
             Ready to bring your ideas to life?

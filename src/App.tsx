@@ -26,18 +26,19 @@ function App() {
           
           <MobileMenu 
             isOpen={isMobileMenuOpen} 
-            currentPage={window.location.pathname.slice(1) || 'home'} 
+            currentPage={window.location.pathname.slice(1) || ''} 
+            toggleMobileMenu={toggleMobileMenu}
           />
           
           <main className="flex-grow">
             <Routes>
-              <Route path="/" element={<Navigate to="/home" replace />} />
-              <Route path="/home" element={<HomePage />} />
+              {/* <Route path="/" element={<Navigate to="/home" replace />} /> */}
+              <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/skills" element={<SkillsPage />} />
               <Route path="/projects" element={<ProjectsPage />} />
               <Route path="/contact" element={<ContactPage />} />
-              <Route path="*" element={<Navigate to="/home" replace />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </main>
           <Footer />

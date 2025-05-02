@@ -19,7 +19,7 @@ export default function Footer() {
           
           <div className="flex flex-col space-y-3">
             <h3 className="text-lg font-semibold">Navigation</h3>
-            <Button variant="link" onClick={() => navigate('/home')} className="p-0 h-auto justify-start text-muted-foreground">Home</Button>
+            <Button variant="link" onClick={() => navigate('/')} className="p-0 h-auto justify-start text-muted-foreground">Home</Button>
             <Button variant="link" onClick={() => navigate('/about')} className="p-0 h-auto justify-start text-muted-foreground">About</Button>
             <Button variant="link" onClick={() => navigate('/skills')} className="p-0 h-auto justify-start text-muted-foreground">Skills</Button>
             <Button variant="link" onClick={() => navigate('/projects')} className="p-0 h-auto justify-start text-muted-foreground">Projects</Button>

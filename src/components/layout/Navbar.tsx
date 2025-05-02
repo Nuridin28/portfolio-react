@@ -12,10 +12,10 @@ interface NavbarProps {
 export default function Navbar({ toggleMobileMenu }: NavbarProps) {
   const { t } = useTranslation();
   const location = useLocation();
-  const currentPage = location.pathname.slice(1) || 'home';
+  const currentPage = location.pathname.slice(1) || '';
   
   const navItems = [
-    { label: t('header.home'), value: "home" },
+    { label: t('header.home'), value: "" },
     { label: t('header.about'), value: "about" },
     { label: t('header.projects'), value: "projects" },
     { label: t('Skills'), value: "skills" },
@@ -26,7 +26,7 @@ export default function Navbar({ toggleMobileMenu }: NavbarProps) {
     <header className="sticky  md:px-8 px-4 top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
-          <Link to="/home" className="text-xl font-bold tracking-tight">
+          <Link to="/" className="text-xl font-bold tracking-tight">
             <span className="text-primary">Nuridin</span>
           </Link>
         </div>

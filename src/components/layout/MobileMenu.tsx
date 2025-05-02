@@ -5,12 +5,13 @@ import { useNavigate } from 'react-router-dom';
 interface MobileMenuProps {
   isOpen: boolean;
   currentPage: string;
+  toggleMobileMenu: () => void;
 }
 
-export default function MobileMenu({ isOpen, currentPage }: MobileMenuProps) {
+export default function MobileMenu({ isOpen, currentPage, toggleMobileMenu }: MobileMenuProps) {
   const navigate = useNavigate();
   const navItems = [
-    { label: "Home", value: "home" },
+    { label: "Home", value: "" },
     { label: "About", value: "about" },
     { label: "Skills", value: "skills" },
     { label: "Projects", value: "projects" },
@@ -27,7 +28,10 @@ export default function MobileMenu({ isOpen, currentPage }: MobileMenuProps) {
           <Button
             key={item.value}
             variant="ghost"
-            onClick={() => navigate(`/${item.value}`)}
+            onClick={() => {
+              navigate(`/${item.value}`)
+              toggleMobileMenu()
+            }}
             className={cn(
               "w-full justify-center text-base font-medium transition-colors",
               currentPage === item.value 
