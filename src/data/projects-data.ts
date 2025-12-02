@@ -8,26 +8,37 @@ export const categories = [
 ];
 
 export const projectsData: Project[] = [
-  // {
-  //   id: 1,
-  //   title: "E-Commerce Platform",
-  //   description: "A full-featured e-commerce platform with product management, cart, and checkout.",
-  //   image: "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  //   year: "2023",
-  //   techs: ["React", "Next.js", "Node.js", "MongoDB"],
-  //   categories: ["webapp", "ecommerce"],
-  //   githubUrl: "https://github.com",
-  //   liveUrl: "https://example.com"
-  // },
+  {
+    id: 1,
+    title: "Fake Store",
+    description: "A fake store with products, categories, and a cart.",
+    image: "/assets/face-store.png",
+    year: "2025",
+    techs: ["React", "Tailwind CSS", "TypeScript"],
+    categories: ["webapp", "ecommerce"],
+    githubUrl: "https://github.com/Nuridin28/fake-store",
+    liveUrl: "https://fake-store-phi-pearl.vercel.app/products"
+  },
   {
     id: 2,
     title: "Food ordering app in university",
     description: "a food ordering app in university",
-    image: "/assetss/ucafe.png",
-    year: "2023",
+    image: "/assets/ucafe.png",
+    year: "2024",
     techs: ["Nextjs", "TypeScript", "NextAPI", "MongoDB"],
     categories: ["admin panel", "dashboard", "webapp"],
     githubUrl: "https://github.com/Nuridin28/ucafe_next",
     liveUrl: "https://ucafe-next.vercel.app/"
+  },
+  {
+    id: 3,
+    title: "Coffee Parfait Bar",
+    description: "a coffee parfait bar with products, categories, and a cart.",
+    image: "/assets/parfait.png",
+    year: "2024",
+    techs: ["React", "TypeScript", "Tailwind CSS"],
+    categories: ["webapp", "ecommerce"],
+    githubUrl: "https://github.com/Nuridin28/Coffee-Parfait-bar",
+    liveUrl: "https://coffee-parfait-bar.vercel.app/"
   },
 ];
