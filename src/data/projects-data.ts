@@ -41,4 +41,15 @@ export const projectsData: Project[] = [
     githubUrl: "https://github.com/Nuridin28/Coffee-Parfait-bar",
     liveUrl: "https://coffee-parfait-bar.vercel.app/"
   },
+  {
+    id: 4,
+    title: "Expenses analyzer",
+    description: "a expenses analyzer with a dashboard and a chart based on deepseek API.",
+    image: "/assets/exp.png",
+    year: "2024",
+    techs: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Deepseek API", "Recharts", "OCR"],
+    categories: ["dashboard", "webapp"],
+    githubUrl: "https://github.com/Nuridin28/expensis-analyzer",
+    liveUrl: "https://expensis-analyzer.vercel.app/"
+  },
 ];
