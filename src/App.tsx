@@ -21,7 +21,7 @@ function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="portfolio-theme">
       <Router>
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen w-full">
           <Navbar toggleMobileMenu={toggleMobileMenu} />
           
           <MobileMenu 
